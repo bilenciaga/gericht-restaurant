@@ -5,6 +5,14 @@ import images from '../../constants/images';
 
 const Navbar = () => {
 
+  let Links =[
+    {name:"HOME",link:"/"},
+    {name:"ABOUT",link:"/"},
+    {name:"MENU",link:"/"},
+    {name:"AWARDS",link:"/"},
+    {name:"CONTACT",link:"/"},
+  ];
+
   const [toggleMenu, setToggleMenu] = useState(false)
 
   return (
@@ -15,11 +23,13 @@ const Navbar = () => {
       </div>
 
       <ul className="hidden text-white text-lg md:hidden lg:flex">
-        <li className="mx-4 hover:scale-150 hover:transition"><a href="#home">Home</a></li>
-        <li className="mx-4 hover:scale-150 hover:transition"><a href="#about">About</a></li>
-        <li className="mx-4 hover:scale-150 hover:transition"><a href="#menu">Menu</a></li>
-        <li className="mx-4 hover:scale-150 hover:transition"><a href="#awards">Awards</a></li>
-        <li className="mx-4 hover:scale-150 hover:transition"><a href="#contact">Contact</a></li>
+      {
+          Links.map((link)=>(
+            <li key={link.name} className='mx-4 hover:scale-150 hover:transition'>
+              <a href={link.link}>{link.name}</a>
+            </li>
+          ))
+      }
       </ul>
 
       <div className="hidden md:flex lg:flex text-white text-md">
@@ -35,11 +45,13 @@ const Navbar = () => {
           <div className="w-full h-screen fixed top-0 left-0 bg-black flex flex-col justify-center text-center">
             <MdOutlineRestaurantMenu className="absolute top-5 right-5" onClick={() => setToggleMenu(false)} />
             <ul className="">
-              <li className='m-8'><a href="#home" onClick={() => setToggleMenu(false)}>Home</a></li>
-              <li className='m-8'><a href="#about" onClick={() => setToggleMenu(false)}>About</a></li>
-              <li className='m-8'><a href="#menu" onClick={() => setToggleMenu(false)}>Menu</a></li>
-              <li className='m-8'><a href="#awards" onClick={() => setToggleMenu(false)}>Awards</a></li>
-              <li className='m-8'><a href="#contact" onClick={() => setToggleMenu(false)}>Contact</a></li>
+            {
+          Links.map((link)=>(
+            <li key={link.name} className='m-8'>
+              <a href={link.link}>{link.name}</a>
+            </li>
+            ))
+            }
             </ul>
           </div>
         )}
