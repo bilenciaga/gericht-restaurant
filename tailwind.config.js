@@ -3,7 +3,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        cormorant: ['Cormorant Upright', 'serif'],
+        opensans:['Open Sans', 'sans-serif'],
+       },
+    },
   },
   plugins: [],
 }

@@ -16,9 +16,9 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
 
   return (
-    <nav className='flex items-center justify-between bg-black py-3 px-6'>
+    <nav className='flex items-center justify-between bg-black py-2 px-4'>
 
-      <div className='w-20 md:w-40'>
+      <div className='w-28 md:w-44'>
         <img src={images.gericht} alt="navbar_logo" />
       </div>
 
@@ -43,11 +43,11 @@ const Navbar = () => {
         <GiHamburgerMenu  onClick={() => setToggleMenu(true)} />
         {toggleMenu && (
           <div className="w-full h-screen fixed top-0 left-0 bg-black flex flex-col justify-center text-center">
-            <MdOutlineRestaurantMenu className="absolute top-5 right-5" onClick={() => setToggleMenu(false)} />
+            <MdOutlineRestaurantMenu size='40' className="absolute top-5 right-5 text-yellow-200" onClick={() => setToggleMenu(false)} />
             <ul className="">
             {
           Links.map((link)=>(
-            <li key={link.name} className='m-8'>
+            <li key={link.name} className='m-8 font-cormorant text-yellow-200'>
               <a href={link.link}>{link.name}</a>
             </li>
             ))
