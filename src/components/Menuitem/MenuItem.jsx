@@ -3,7 +3,7 @@ import React from 'react'
 function MenuItem({ title, price, tags }) {
 
   return (
-<div className='my-5'>
+<div className='my-5 lg:my-10 '>
   <div className='flex justify-between items-center'>
     <div className='flex flex-col justify-start text-left text-white'>
       <h1 className='font-cormorant text-yellow-100 text-xl md:text-2xl'>{title}</h1>

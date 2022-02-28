@@ -1,5 +1,6 @@
 import { data, images } from '../../constants'
 import MenuItem from '../../components/Menuitem/MenuItem'
+import Button from '../../components/Button/Button'
 
 function SpecialMenu() {
   
@@ -13,27 +14,30 @@ function SpecialMenu() {
       <h1 className='font-cormorant text-yellow-200 md:text-7xl text-5xl '>Today's Special</h1>
     </div>
 
-    <div className='flex flex-col md:flex-row'>
-      <div className=''>
+    <div className='my-5 flex flex-col lg:flex-row lg:justify-between '>
+
+      <div className='my-5 lg:w-full flex flex-col'>
         <h2 className='font-cormorant text-white text-3xl md:text-5xl'>Wine & Beer</h2>
-        {data.wines.map((wine, index) => (
+        {data.cocktails.map((wine, index) => (
           <MenuItem key={wine.title + index} title={wine.title} price={wine.price} tags={wine.tags} />
         ))}
       </div>
 
-      <div className='flex justify-center items-center'>
-        <img src={images.menu} className='md:w-4/6' alt="menu__img" />
-      </div>
+      <img src={images.menu} className='lg:mx-5 lg:h-[50rem]' alt='' />
 
-      <div className=''>
+      <div className='my-5 lg:w-full flex flex-col'>
         <h2 className='font-cormorant text-white text-3xl md:text-5xl'>Cocktails</h2>
         {data.cocktails.map((cocktail, index) => (
           <MenuItem key={cocktail.title + index} title={cocktail.title} price={cocktail.price} tags={cocktail.tags} />
         ))}
       </div>
     </div>
-    
+
+    <div className='flex justify-center items-center'>
+      <Button>View More</Button>
+    </div>
   </div>
+  
 
 
 

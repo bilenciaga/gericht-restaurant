@@ -39,10 +39,10 @@ const Navbar = () => {
       </div>
 
       
-      <div className='flex text-2xl text-white md:hidden'>
-        <GiHamburgerMenu  onClick={() => setToggleMenu(true)} />
+      <div className='flex text-2xl text-white'>
+        <GiHamburgerMenu  className='hover:scale-150 hover:transition' onClick={() => setToggleMenu(true)} />
         {toggleMenu && (
-          <div className="w-full h-screen fixed top-0 left-0 bg-black flex flex-col justify-center text-center">
+          <div className="w-full h-screen fixed z-50 top-0 left-0 bg-black flex flex-col justify-center text-center">
             <MdOutlineRestaurantMenu size='40' className="absolute top-5 right-5 text-yellow-200" onClick={() => setToggleMenu(false)} />
             <ul className="">
             {
