@@ -6,12 +6,12 @@ function SpecialMenu() {
   
   return (
 
-  <div className="min-h-screen py-8 px-10 flex flex-col bg-black text-center">
+  <div className="min-h-screen py-16 px-24flex flex-col bg-black text-center">
 
     <div className='flex flex-col justify-center items-center'>
       <p className='text-white font-cormorant text-lg md:text-2xl font-bold'>Menu That Fits You Palatte</p>
-      <img src={images.spoon}  className='w-12' alt=''></img>
-      <h1 className='font-cormorant text-yellow-200 md:text-7xl text-5xl '>Today's Special</h1>
+      <img src={images.spoon}  className='w-12 mb-5' alt=''></img>
+      <h1 className='font-cormorant text-yellow-200 md:text-7xl text-5xl mb-5 '>Today's Special</h1>
     </div>
 
     <div className='my-5 flex flex-col lg:flex-row lg:justify-between '>
