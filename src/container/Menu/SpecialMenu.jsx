@@ -6,7 +6,7 @@ function SpecialMenu() {
   
   return (
 
-  <div className="min-h-screen py-16 px-24flex flex-col bg-black text-center">
+  <div className="min-h-screen py-8 px-10 lg:py-16 lg:px-24 bg-black text-center">
 
     <div className='flex flex-col justify-center items-center'>
       <p className='text-white font-cormorant text-lg md:text-2xl font-bold'>Menu That Fits You Palatte</p>

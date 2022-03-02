@@ -4,7 +4,7 @@ import Chef from './container/Chef/Chef';
 import Header from './container/Header/Header';
 import Laurels from './container/Laurels/Laurels';
 import SpecialMenu from './container/Menu/SpecialMenu';
-
+import Gallery from './container/Gallery/Gallery';
 function App() {
   return (
 <>
@@ -14,6 +14,7 @@ function App() {
     <SpecialMenu />
     <Chef />
     <Laurels />
+    <Gallery />
 </>
   );
 }
