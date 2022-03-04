@@ -2,7 +2,7 @@ import Button from '../../components/Button/Button';
 import { images } from '../../constants'
 
 const Header = () => (
-  <div className='min-h-screen py-8 px-10 lg:py-16 lg:px-24 bg-black flex flex-col justify-between lg:flex-row '>
+  <div className='min-h-screen py-8 px-10 md:py-16 md:px-24 bg-black flex flex-col justify-between lg:flex-row '>
 
     <div className="flex flex-col justify-center items-start">
       <p className="font-cormorant text-white text-lg md:text-2xl font-bold tracking-wider">Chase The New Flavour</p>

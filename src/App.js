@@ -5,6 +5,8 @@ import Header from './container/Header/Header';
 import Laurels from './container/Laurels/Laurels';
 import SpecialMenu from './container/Menu/SpecialMenu';
 import Gallery from './container/Gallery/Gallery';
+import FindUs from './container/Findus/FindUs';
+import Footer from './container/Footer/Footer';
 function App() {
   return (
 <>
@@ -15,6 +17,8 @@ function App() {
     <Chef />
     <Laurels />
     <Gallery />
+    <FindUs />
+    <Footer />
 </>
   );
 }

@@ -2,7 +2,7 @@ import Button from '../../components/Button/Button';
 import { images } from '../../constants'
 
 const AboutUs = () => (
-  <div className='min-h-screen py-8 px-10 lg:py-16 lg:px-24 bg-black flex flex-col md:flex-row md:justify-between md:items-center' >
+  <div className='min-h-screen py-8 px-10 md:py-16 md:px-24 bg-black flex flex-col md:flex-row md:justify-between md:items-center' >
 
     <div className='flex flex-col items-end text-right'>
 
