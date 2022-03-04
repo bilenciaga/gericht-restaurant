@@ -1,9 +1,8 @@
 import { images } from "../../constants"
 
-
 function Chef() {
   return (
-  <div className='min-h-screen py-8 px-10 md:py-16 md:px-24 flex flex-col lg:flex-row md:justify-between lg:items-between bg-black'>
+  <div className='min-h-screen background py-8 px-10 md:py-16 md:px-24 flex flex-col lg:flex-row md:justify-between lg:items-between'>
 
     <div  className="flex justify-center items-center h-full my-auto">
       <img src={images.chef} className='w-full lg:w-4/5' alt=''></img>

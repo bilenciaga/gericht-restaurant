@@ -3,7 +3,7 @@ import Button from '../../components/Button/Button';
 
 function FindUs() {
   return (
-    <div className='py-8 px-10 md:py-16 lg:px-24 bg-black flex flex-col lg:flex-row lg:justify-center lg:items-center'>
+    <div className='background py-8 px-10 md:py-16 md:px-24 bg-black flex flex-col lg:flex-row lg:justify-center lg:items-center'>
       <div className="flex flex-col w-full justify-center items-start lg:w-full">
         <p className="font-cormorant text-white text-lg md:text-2xl font-bold tracking-wider">Contact</p>
         <img src={images.spoon} className='w-12 mb-5' alt=''></img>

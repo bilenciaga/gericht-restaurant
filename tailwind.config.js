@@ -9,6 +9,9 @@ module.exports = {
         cormorant: ['Cormorant Upright', 'serif'],
         opensans:['Open Sans', 'sans-serif'],
        },
+      backgroundImage:{
+        'bg-image' : "url('C:/Users/Nguyen Hoai Trung/Desktop/react/gericht-restaurant/src/assets/bg.png')",
+      }
     },
   },
   plugins: [

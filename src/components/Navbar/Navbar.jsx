@@ -16,7 +16,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
 
   return (
-    <nav className='flex items-center justify-between bg-black py-2 px-4'>
+    <nav className='py-8 px-10 md:px-24 flex items-center justify-between bg-black'>
 
       <div className='w-28 md:w-44'>
         <img src={images.gericht} alt="navbar_logo" />
@@ -39,8 +39,8 @@ const Navbar = () => {
       </div>
 
       
-      <div className='flex text-2xl text-white'>
-        <GiHamburgerMenu  className='hover:scale-150 hover:transition' onClick={() => setToggleMenu(true)} />
+      <div className='flex text-2xl text-white md:hidden'>
+        <GiHamburgerMenu  className='cursor hover:scale-150 hover:transition' onClick={() => setToggleMenu(true)} />
         {toggleMenu && (
           <div className="w-full h-screen fixed z-50 top-0 left-0 bg-black flex flex-col justify-center text-center">
             <MdOutlineRestaurantMenu size='40' className="absolute top-5 right-5 text-yellow-200" onClick={() => setToggleMenu(false)} />
