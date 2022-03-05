@@ -14,8 +14,8 @@ const Footer = () => (
       </div>
 
       <div className='py-16 text-white flex flex-col justify-center items-center text-center w-full'>
-        <div className='w-3/4'>
-          <img src={images.gericht} alt=''></img>
+        <div className='flex justify-center items-center'>
+          <img src={images.gericht} className='w-3/4' alt=''></img>
         </div>
         <p className='text-white mt-3'>"The best way to find yourself is to lose yourself in the service of others.”</p>
         <div className='flex justify-center my-4'>
@@ -23,9 +23,9 @@ const Footer = () => (
         </div>
 
         <div className='text-white flex flex-row justify-center'>
-          <FiFacebook className='mx-2 text-2xl'/>
-          <FiTwitter className='mx-2 text-2xl'/>
-          <FiInstagram className='mx-2 text-2xl '/>
+          <FiFacebook className='mx-2 text-2xl cursor-pointer hover:stroke-yellow-300'/>
+          <FiTwitter className='mx-2 text-2xl cursor-pointer hover:stroke-yellow-300'/>
+          <FiInstagram className='mx-2 text-2xl cursor-pointer hover:stroke-yellow-300'/>
         </div>
       </div>
 
