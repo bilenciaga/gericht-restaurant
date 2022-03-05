@@ -7,6 +7,7 @@ import SpecialMenu from './container/Menu/SpecialMenu';
 import Gallery from './container/Gallery/Gallery';
 import FindUs from './container/Findus/FindUs';
 import Footer from './container/Footer/Footer';
+
 function App() {
   return (
 <>

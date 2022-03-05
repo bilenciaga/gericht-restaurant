@@ -2,7 +2,7 @@ import Button from '../../components/Button/Button';
 import { images } from '../../constants'
 
 const AboutUs = () => (
-  <div className='background relative min-h-screen py-8 px-10 md:py-16 md:px-24 flex flex-col md:flex-row md:justify-between md:items-center' >
+  <div className='background relative min-h-screen py-8 px-10 md:py-16 md:px-24 flex flex-col md:flex-row md:justify-between md:items-center' id='about' >
 
     <div className='absolute flex justify-center items-center inset-0'>
       <img src={images.G} alt='' className='w-[391px] h-[415px] z-0'></img>

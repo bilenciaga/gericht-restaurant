@@ -1,7 +1,7 @@
 import { images } from '../../constants';
 import Button from '../../components/Button/Button';
 import { useRef } from 'react'; 
-import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
+import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
 
 
 const Gallery = () => {

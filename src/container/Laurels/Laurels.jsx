@@ -5,7 +5,7 @@ import Award from '../../components/AwardItem/Award'
 
 function Laurels() {
   return (
-    <div className='background py-8 px-10 md:py-16 md:px-24 lg:flex lg:flex-row lg:justify-between bg-black'>
+    <div className='background py-8 px-10 md:py-16 md:px-24 lg:flex lg:flex-row lg:justify-between bg-black' id='awards'>
 
       <div className='flex flex-col text-white lg:w-full lg:justify-center '>
         <p className='text-white font-cormorant text-lg md:text-2xl font-bold'>Awards & Recognition</p>

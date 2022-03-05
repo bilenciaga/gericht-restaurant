@@ -12,3 +12,8 @@
     background-repeat: repeat;
     background-attachment: fixed;
   }
+
+* {
+    scroll-behavior: smooth;
+  }
+  

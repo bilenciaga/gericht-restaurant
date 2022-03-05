@@ -6,11 +6,11 @@ import images from '../../constants/images';
 const Navbar = () => {
 
   let Links =[
-    {name:"HOME",link:"/"},
-    {name:"ABOUT",link:"/"},
-    {name:"MENU",link:"/"},
-    {name:"AWARDS",link:"/"},
-    {name:"CONTACT",link:"/"},
+    {name:"HOME",link:"#home"},
+    {name:"ABOUT",link:"#about"},
+    {name:"MENU",link:"#menu"},
+    {name:"AWARDS",link:"#awards"},
+    {name:"CONTACT",link:"#contact"},
   ];
 
   const [toggleMenu, setToggleMenu] = useState(false)
