@@ -1,8 +1,9 @@
 import Button from '../../components/Button/Button';
-import { images } from '../../constants'
+import { images } from '../../constants';
+import { motion } from 'framer-motion';
 
 const AboutUs = () => (
-  <div className='background relative min-h-screen py-8 px-10 md:py-16 md:px-24 flex flex-col md:flex-row md:justify-between md:items-center' id='about' >
+  <div className='background relative min-h-screen py-8 px-10 md:py-16 md:px-24 flex flex-col md:flex-row md:justify-between md:items-center' id='about'>
 
     <div className='absolute flex justify-center items-center inset-0'>
       <img src={images.G} alt='' className='w-[391px] h-[415px] z-0'></img>
@@ -19,7 +20,7 @@ const AboutUs = () => (
       </div>
     </div>
 
-    <div className='flex justify-center my-20 mx-10 min-w-fit z-10	'>
+    <div className='flex justify-center my-20 mx-10 min-w-fit z-10'>
       <img src={images.knife} className='h-[910px]' alt=''></img>
     </div>
 

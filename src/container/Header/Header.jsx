@@ -1,5 +1,6 @@
 import Button from '../../components/Button/Button';
 import { images } from '../../constants'
+import { motion } from 'framer-motion'
 
 const Header = () => (
   <div className='min-h-screen py-8 px-10 md:py-16 md:px-24 bg-black flex flex-col justify-between lg:flex-row' id='home'>
